@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+z-index: 2147483647;
+background-color:#000;
+border: 1px #000;
+align-items: center;
+width: 100%;
+height: auto;
+min-height: auto;
+padding: 30px 0;
+display: flex;
+position: fixed;
+}
+.custom-container {
+justify-content: space-between;
+align-items: center;
+width: 100%;
+max-width: 1180px;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+}
+.ff-title {
+position: absolute;
+top: 90px;
+left: 50%;
+transform: translateX(-50%);
+color: #2c292e;
+margin: 0;
+/* font-family: Sunflower, sans-serif; */
+font-size: 60px;
+font-weight: 500;
+line-height: 1;
+text-align: center;
+width: 100%;
+}
+    :root {
+--cards: 5;
+--cardHeight: 350px;
+--cardTopPadding: 1.5em;
+--cardMargin: 4vw;
+}
+.container {
+width: 600px;
+margin: 0 auto;
+ position: relative; /* For absolute positioning of cards */
+ height: 100vh; /* Full viewport height */
+ will-change: position;
+ overflow: hidden; 
+}
+@media (min-width: 0) and (max-width: 767.98px) { 
+    .container {
+        width: 90%;
+    }
+}
+#cards {
+        position: relative; /* Make sure cards stack properly */
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        position: absolute; /* Stack cards on top of each other */
+        width: 100%;
+        height: 100vh; /* Make each card take full height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: filter 0.5s; /* Smooth blur transition */
+    }
+#card1 {
+--index: 1;
+}
+#card2 {
+--index: 2;
+}
+#card3 {
+--index: 3;
+}
+#card4 {
+--index: 4;
+}
+#card5 {
+--index: 5;
+}
+.card {
+ position: sticky;
+     top: 0;
+}
+/* #card1 .card-body {
+background-color: #52b2cf;
+}
+#card2 .card-body {
+background-color: #7EC4CF;
+
+background-color: #e5a36f;
+}
+#card3 .card-body {
+background-color: #9cadce;
+}
+#card4 .card-body {
+background-color: #d4afb9;
+}
+#card5 .card-body {
+background-color: #5452cf;
+} */
+.card-body {
+box-sizing: border-box;
+/* padding: 30px; */
+/* border-radius: 20px; */
+/* height: var(--cardHeight); */
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.5s;
+ width: 600px;
+ height: 350px;
+}
